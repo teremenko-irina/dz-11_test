@@ -33,7 +33,6 @@
                     <suiteXmlFiles>
                         <suiteXmlFile>src/test/resources/all_tests.xml</suiteXmlFile>
                         <suiteXmlFile>src/test/resources/getters_setters_tests.xml</suiteXmlFile>
-
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
