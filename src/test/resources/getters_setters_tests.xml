@@ -1,26 +1,24 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Getters and Setters Tests">
     <test name="Man Tests">
+        <groups>
+            <run>
+                <include name="getters" />
+            </run>
+        </groups>
         <classes>
-            <class name="org.example.ManTests">
-                <methods>
-                    <include name="testGetFirstName" />
-                    <include name="testGetLastName" />
-                    <include name="testGetAge" />
-                </methods>
-            </class>
+            <class name="org.example.ManTests" />
         </classes>
     </test>
     <test name="Woman Tests">
+        <groups>
+            <run>
+                <include name="getters" />
+                <include name="getPartner" />
+            </run>
+        </groups>
         <classes>
-            <class name="org.example.WomanTests">
-                <methods>
-                    <include name="testGetFirstName" />
-                    <include name="testGetLastName" />
-                    <include name="testGetAge" />
-                    <include name="testGetPartnerLastName" />
-                </methods>
-            </class>
+            <class name="org.example.WomanTests" />
         </classes>
     </test>
 </suite>

@@ -1,13 +1,26 @@
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+  <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 <suite name="All Tests">
-    <test name="Man Tests">
-        <classes>
-            <class name="org.example.ManTests" />
-        </classes>
-    </test>
-    <test name="Woman Tests">
-        <classes>
-            <class name="org.example.WomanTests" />
-        </classes>
-    </test>
+<test name="Man Tests">
+    <groups>
+        <run>
+            <include name="getters" />
+            <include name="isRetired" />
+        </run>
+    </groups>
+    <classes>
+        <class name="org.example.ManTests" />
+    </classes>
+</test>
+<test name="Woman Tests">
+    <groups>
+        <run>
+            <include name="getters" />
+            <include name="getPartner" />
+            <include name="isRetired" />
+        </run>
+    </groups>
+    <classes>
+        <class name="org.example.WomanTests" />
+    </classes>
+</test>
 </suite>
